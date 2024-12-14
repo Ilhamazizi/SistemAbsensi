@@ -13,7 +13,7 @@ void addEmployee(Employee employees[], int *totalEmployees) {
 	scanf("%d", &employees[*totalEmployees].id);
 
 	getchar();
-	scanf("Masukkan Nama karyawan: ");
+	printf("Masukkan Nama karyawan: ");
 
 	fgets(employees[*totalEmployees].name, NAME_LENGTH, stdin);
 	employees[*totalEmployees].name[strcspn(employees[*totalEmployees].name, "\n")] = '\0';
@@ -64,4 +64,21 @@ void recordAttendance(Employee employees[], int totalEmployees) {
 	}
 
 	printf("Karyawan dengan ID %d tidak ditemukan!\n", id);
+}
+
+/* fungsi melihat daftar kehadiran */
+void showAttendanceRecord(Employee employees[], int totalEmployees) {
+	printf("\n Laporan Absensi Karyawan:\n");
+	printf("ID\tNama\t\tHadir\tIzin\tSakit\tAplha\n");
+	printf("--------------------------------------------------------\n");
+
+	for (int i = 0; i < totalEmployees; i++) {
+		printf("%d\t%s\t\t%d\t%d\t%d\t%d\n",
+				employees[i].id,
+				employees[i].name,
+				employees[i].hadir,
+				employees[i].izin,
+				employees[i].sakit,
+				employees[i].alpha);
+	}
 }

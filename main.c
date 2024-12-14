@@ -3,19 +3,19 @@
 
 // fungsi utama
 int main() {
+	Employee employees [MAX_EMPLOYEES];
 	int totalEmployees = 0;
-	int choice;
-	Employee employees[MAX_EMPLOYEES];	
+	int choice;	
 
 	do {
 		printf("\nSistem Absensi Karyawan\n");
-		printf("1. Tambah Karayawan\n");
+		printf("1. Tambah Karyawan\n");
 		printf("2. Record Kehadiran\n");
-		printf("3. Tampilkan Laporan");
+		printf("3. Tampilkan Laporan\n");
 		printf("Keluar\n");
 
 		printf("Pilihan: ");
-		scanf("%d", choice);
+		scanf("%d", &choice);
 
 		switch (choice) {
 			case 1:
