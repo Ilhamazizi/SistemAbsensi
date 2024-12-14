@@ -1,4 +1,7 @@
 ### How to run
 ```
-gcc -o bin/absensi main.c src/absensi.c
+$ gcc -o bin/absensi main.c src/absensi.c
+```
+```
+$ ./bin/absensi
 ```
