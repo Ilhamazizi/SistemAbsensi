@@ -12,7 +12,7 @@ int main() {
 		printf("1. Tambah Karyawan\n");
 		printf("2. Record Kehadiran\n");
 		printf("3. Tampilkan Laporan\n");
-		printf("Keluar\n");
+		printf("4. Keluar\n");
 
 		printf("Pilihan: ");
 		scanf("%d", &choice);
